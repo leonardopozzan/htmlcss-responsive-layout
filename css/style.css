@@ -54,6 +54,12 @@ ul{
 section p{
     line-height: 2rem;
 }
+section h2{
+    font-size: 2.5rem;
+}section h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
 
 /************ Header ****************/
 header {
@@ -74,13 +80,10 @@ header {
 }
 #intro h3{
     color: var(--blue);
-    font-size: 2rem;
-    font-weight: 700;
 }
 #intro .card:not(:first-child){
     text-align: center;
 }
-
 #intro .btn{
     background-color: var(--blue);
     font-size: 1.1rem;
@@ -111,9 +114,6 @@ header {
 #planning .container{
     padding: 3rem 2rem;
 }
-#planning h2{
-    font-size: 2.5rem;
-}
 #planning .box_left{
     color: var(--white);
 }
@@ -122,6 +122,8 @@ header {
     background-color: var(--white);
     border-radius: 2rem;
     text-align: center;
+}
+#planning .box_right p{
     font-style: italic;
 }
 #planning .box_right i{
@@ -131,6 +133,43 @@ header {
     height: 3rem;
     background-color: var(--purple);
     border-radius: 50%;
+}
+
+/************ Section Testimonials ****************/
+#testimonials{
+    text-align: center;
+}
+#testimonials h2{
+    color: var(--purple);
+}
+#testimonials .badge{
+    background-color: var(--purple);
+    padding: 2rem 1rem;
+    border-radius: 3rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+#testimonials .img_box{
+    height: 13rem;
+    width: 13rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+}
+#testimonials .img_box.im1{
+    background-image: url('../img/testimonial1.jpg');
+}
+#testimonials .img_box.im2{
+    background-image: url('../img/testimonial2.jpg');
+}
+#testimonials .img_box.im3{
+    background-image: url('../img/testimonial3.jpg');
+}
+#testimonials .name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /************ Media Query ****************/
