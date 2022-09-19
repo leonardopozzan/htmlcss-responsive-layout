@@ -4,3 +4,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --white: #ffffff;
+    --light-blue: #B5DDFF;
+    --black: #000000;
+    --blue: #0084FD;
+    --yellow: #FDC15F;
+    --purple: #9792E4;
+    --dark-gray: #333333;
+}
+body {
+    background-color: var(--white);
+    font-family: 'PT Sans', sans-serif;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/************ Common ****************/
+
+.flex{
+    display: flex;
+}
+.j_between{
+    justify-content: space-between;
+}
+.a_it_center{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    padding: 0.5rem 3rem;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 1.5rem;
+}
+.padd_bottom{
+    padding-bottom: 2rem;
+}
+
+/************ Header ****************/
+header {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+.main_menu{
+    display: none;
+}
+
+/************ Section Intro ****************/
+#intro .card{
+    background-color: var(--light-blue);
+    border-radius: 3rem;
+    padding: 3rem 3rem 0 3rem;
+}
+#intro h2{
+    color: var(--blue);
+    font-size: 3rem;
+    font-weight: 700;
+}
+#intro p{
+    line-height: 2rem;
+}
+#intro .btn{
+    background-color: var(--blue);
+}
+#intro .card .img_box img{
+    width: 100%;
+}
+#intro .card .img_box{
+    width: 70%;
+    margin: auto;
+}
