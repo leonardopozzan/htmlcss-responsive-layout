@@ -51,6 +51,9 @@ ul{
 .margin_bottom_6rem{
     margin-bottom: 6rem;
 }
+section p{
+    line-height: 2rem;
+}
 
 /************ Header ****************/
 header {
@@ -69,7 +72,7 @@ header {
     padding: 3rem 3rem 0 3rem;
     margin-bottom: 3rem;
 }
-#intro h2{
+#intro h3{
     color: var(--blue);
     font-size: 2rem;
     font-weight: 700;
@@ -77,9 +80,7 @@ header {
 #intro .card:not(:first-child){
     text-align: center;
 }
-#intro p{
-    line-height: 2rem;
-}
+
 #intro .btn{
     background-color: var(--blue);
     font-size: 1.1rem;
@@ -98,6 +99,38 @@ header {
     font-size: 7rem;
     text-align: center;
     color: var(--blue);
+}
+
+/************ Section Planning ****************/
+#planning, #features, #get-started {
+    background-color: var(--purple);
+}
+#planning img{
+    max-width: 100%;
+}
+#planning .container{
+    padding: 3rem 2rem;
+}
+#planning h2{
+    font-size: 2.5rem;
+}
+#planning .box_left{
+    color: var(--white);
+}
+#planning .box_right{
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    text-align: center;
+    font-style: italic;
+}
+#planning .box_right i{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--purple);
+    border-radius: 50%;
 }
 
 /************ Media Query ****************/
