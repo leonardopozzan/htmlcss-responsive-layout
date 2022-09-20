@@ -142,7 +142,7 @@ header {
 }
 
 /************ Section Testimonials ****************/
-#testimonials{
+#testimonials, #get-started /*sezione finale*/{
     text-align: center;
 }
 #testimonials h2{
@@ -190,6 +190,7 @@ header {
 #features .card h2, #about-us h2 /*titolo della sezione about-us con le stesse dimensioni*/{
     font-size: 4rem;
 }
+
 /************ Section About Us ****************/
 #about-us .img_box{
     background-image: url('../img/about.jpg');
@@ -208,6 +209,29 @@ header {
     font-weight: 700;
     line-height: 3rem;
     color: var(--purple);
+}
+
+/************ Section Get Strated ****************/
+#get-started{
+    color: var(--white);
+    padding-top: 3rem;
+}
+#get-started h1{
+    font-size: 5rem;
+    color: var(--yellow);
+}
+#get-started .btn{
+    background-color: var(--white);
+    color: var(--purple);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+#get-started .underline{
+    text-decoration: underline;
+    color: var(--white);
 }
 /************ Media Query ****************/
 @media screen and (min-width:768px){
