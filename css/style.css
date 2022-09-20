@@ -287,4 +287,12 @@ footer{
         margin: 0 1.5rem;
         align-self: flex-end;
     }
+    #planning .box_right{
+        align-self: flex-end;
+        margin-left: 3rem;
+    }
+    #planning .box_left img{
+        margin-bottom: 10rem;
+        margin-top: 5rem;
+    }
 }
