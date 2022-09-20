@@ -216,9 +216,7 @@ header {
 /************ Footer ****************/
 footer{
     background-color: var(--dark-gray);
-}
-footer p{
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 /************ Media Query ****************/
 @media screen and (min-width:768px){
