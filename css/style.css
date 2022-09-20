@@ -33,7 +33,7 @@ body {
 .a_it_center{
     align-items: center;
 }
-a{
+a:not(footer a){
     text-decoration: none;
 }
 ul{
@@ -51,6 +51,21 @@ img{
 }
 .btn i{
     margin-right: 0.7rem;
+}
+.txt_center{
+    text-align: center;
+}
+.txt_white{
+    color: var(--white);
+}
+.txt_purple{
+    color: var(--purple);
+}
+.bg_white{
+    background-color: var(--white);
+}
+.bg_purple{
+    background-color: var(--purple);
 }
 .padd_bottom_2rem{
     padding-bottom: 2rem;
@@ -78,7 +93,6 @@ section h3{
 /************ Header ****************/
 header {
     background-color: var(--blue);
-    color: var(--white);
     padding: 1rem 2rem;
 }
 .main_menu{
@@ -93,9 +107,6 @@ header {
 #intro h3{
     color: var(--blue);
 }
-#intro .card:not(:first-child){
-    text-align: center;
-}
 #intro .btn{
     background-color: var(--blue);
     font-size: 1.1rem;
@@ -109,25 +120,16 @@ header {
 }
 #intro .icon{
     font-size: 7rem;
-    text-align: center;
     color: var(--blue);
 }
 
 /************ Section Planning ****************/
-#planning, #features, #get-started /*colore viola per le sezioni*/{
-    background-color: var(--purple);
-}
 #planning .container{
     padding: 3rem 2rem;
 }
-#planning .box_left{
-    color: var(--white);
-}
 #planning .box_right{
     padding: 2rem;
-    background-color: var(--white);
     border-radius: 2rem;
-    text-align: center;
 }
 #planning .box_right p{
     font-style: italic;
@@ -137,21 +139,10 @@ header {
     line-height: 3rem;
     width: 3rem;
     height: 3rem;
-    background-color: var(--purple);
     border-radius: 50%;
 }
 
 /************ Section Testimonials ****************/
-#testimonials, #get-started /*sezione finale*/{
-    text-align: center;
-}
-#testimonials h2{
-    color: var(--purple);
-}
-#testimonials .card{
-    background-color: var(--purple);
-    color: var(--white);
-}
 #testimonials .img_box, #about-us .img_box /*stessa immagine nella sezione about-us*/{
     height: 13rem;
     width: 13rem;
@@ -177,15 +168,7 @@ header {
 
 /************ Section Features ****************/
 #features .container > h2{
-    color: var(--white);
-    text-align: center;
     padding-top: 3rem;
-}
-#features .card{
-    background-color: var(--white);
-}
-#features .card h2, #features .card h3, #about-us h2 /*titolo della sezione about-us con gli stessi colori*/{
-    color: var(--purple);
 }
 #features .card h2, #about-us h2 /*titolo della sezione about-us con le stesse dimensioni*/{
     font-size: 4rem;
@@ -202,18 +185,15 @@ header {
     top: 0;
     right: 0;
     font-size: 4rem;
-    color: var(--purple);
 }
 #about-us .badge p{
     font-size: 2rem;
     font-weight: 700;
     line-height: 3rem;
-    color: var(--purple);
 }
 
 /************ Section Get Strated ****************/
 #get-started{
-    color: var(--white);
     padding-top: 3rem;
 }
 #get-started h1{
@@ -231,7 +211,14 @@ header {
 }
 #get-started .underline{
     text-decoration: underline;
-    color: var(--white);
+}
+
+/************ Footer ****************/
+footer{
+    background-color: var(--dark-gray);
+}
+footer p{
+    padding: 2rem 0;
 }
 /************ Media Query ****************/
 @media screen and (min-width:768px){
