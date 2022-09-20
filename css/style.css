@@ -295,4 +295,7 @@ footer{
         margin-bottom: 10rem;
         margin-top: 5rem;
     }
+    #features .card{
+        width: calc(100% / 3 - 2rem);
+    }
 }
