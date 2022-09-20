@@ -13,9 +13,9 @@
     --purple: #9792E4;
     --dark-gray: #333333;
 }
-body {
-    background-color: var(--white);
+html {
     font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 .container{
     max-width: 450px;
@@ -175,6 +175,10 @@ header {
 }
 
 /************ Section About Us ****************/
+#about-us .description p{
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+}
 #about-us .img_box{
     background-image: url('../img/about.jpg');
     position: relative;
@@ -260,5 +264,11 @@ footer{
         margin-left: -1rem;
         margin-right: -1rem;
     }
-
+    #about-us .description{
+        width: calc(60% - 4rem);
+        margin-right: 4rem;
+    }
+    #about-us .badge{
+        width: 40%;
+    }
 }
