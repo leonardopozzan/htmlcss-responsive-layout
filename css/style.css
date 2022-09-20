@@ -298,4 +298,9 @@ footer{
     #features .card{
         width: calc(100% / 3 - 2rem);
     }
+} 
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
 }
