@@ -16,7 +16,7 @@
 html {
     font-family: 'PT Sans', sans-serif;
     scroll-behavior: smooth;
-    scroll-padding: 70px;
+    scroll-padding: 60px;
 }
 .container{
     max-width: 450px;
@@ -73,6 +73,9 @@ img{
 }
 .margin_top_8rem{
     margin-top: 8rem;
+}
+.margin_bottom_6rem{
+    margin-bottom: 6rem;
 }
 section .card{
     border-radius: 3rem;
@@ -329,6 +332,24 @@ footer{
 @media screen and (min-width: 992px){
     .container{
         max-width: 960px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .main_menu{
+        display: block;
+        color: var(--white);
+        height: 60px;
+        line-height: 60px;
+    }
+    .main_menu a{
+        margin-left: 2rem;
+    }
+    .main_menu ul li:last-child a{
+        background-color: var(--white);
+        color: var(--black);
+        padding: 0.5rem 1rem;
+        border-radius: 1rem;
     }
     .flex_lg{
         display: flex;
