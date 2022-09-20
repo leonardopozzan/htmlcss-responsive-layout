@@ -223,8 +223,10 @@ footer{
     .container{
         max-width: 750px;
     }
-    #intro .cards{
+    .flex_md{
         display: flex;
+    }
+    #intro .cards{
         flex-wrap: wrap;
         margin-left: -0.75rem;
         margin-right: -0.75rem;
@@ -243,4 +245,13 @@ footer{
         width: 65%;
         margin: 0;
     }
+    #testimonials .img_box{
+        margin-right: 2rem;
+    }
+    #testimonials .speech_box{
+        width: calc(100% - 15rem);
+        text-align: left;
+    }
+    
+
 }
