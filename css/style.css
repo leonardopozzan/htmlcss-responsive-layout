@@ -16,6 +16,7 @@
 html {
     font-family: 'PT Sans', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding: 70px;
 }
 .container{
     max-width: 450px;
@@ -70,8 +71,8 @@ img{
 .padd_bottom_2rem{
     padding-bottom: 2rem;
 }
-.margin_bottom_6rem{
-    margin-bottom: 6rem;
+.margin_top_8rem{
+    margin-top: 8rem;
 }
 section .card{
     border-radius: 3rem;
@@ -93,13 +94,66 @@ section h3{
 /************ Header ****************/
 header {
     background-color: var(--blue);
-    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header .container{
+    height: 60px;
+}
+.box_nav{
+    margin-right: -0.8rem;
+}
+.hamburger i{
+    font-size: 2rem;
+    padding: 0.8rem;
+    height: 60px;
+}
+.hamburger{
+    position: relative;
+}
+#list_hidden{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: var(--light-blue);
+    width: 200px;
+    height: 150px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    z-index: 500;
+    line-height: 1.4rem;
+}
+.layover{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: none;
 }
 .main_menu{
     display: none;
 }
 
+/************ Animazione hover navbar ****************/
+.hamburger:hover i{
+    background-color: var(--light-blue);
+}
+.hamburger:hover #list_hidden{
+    display: block;
+}
+.hamburger:hover ~ .layover{
+    display: block;
+}
+
 /************ Section Intro ****************/
+main{
+    margin-top: 6rem;
+}
 #intro .card{
     background-color: var(--light-blue);
     padding-bottom: 0;
